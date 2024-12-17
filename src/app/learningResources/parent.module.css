@@ -1,0 +1,162 @@
+#banner{
+    background-image: url(../../../public/Images/resources_banner.webp);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    padding: 0 10%;
+    font-size: 32px;
+    text-align: center;
+    color: #ffff;
+}
+
+#banner h1{
+    background-color: #003D30;
+    padding: 10px 20px;
+}
+
+.heading{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    width: auto;
+    margin: 0;
+    padding: 50px 10% 0 10%;
+  }
+
+.heading h2{
+    margin:  0;
+    padding: 0;
+    text-decoration: underline;
+  }
+
+#splitContent{
+  display: flex;
+  justify-content: space-between;
+  background-color: #008066;
+  height: auto;
+  width: auto;
+  padding: 50px 10%;
+}
+
+.container{
+  color: #ffff;
+  display: block;
+  align-items: center;
+  height: auto;
+  width: 31%;
+  margin: 0;
+}
+
+.container h3{
+  text-align: left;
+  font-size: 24px;
+  margin: 16px 0 8px 0;
+}
+
+.container p{
+  padding: 0;
+  margin: 0;
+}
+
+.imgcontainer{
+  position: relative;
+  height: 250px;
+  width: auto;
+  border-radius: 20px;
+}
+
+.imgcontainer a img{
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+  transition: all 0.5s ease;
+}
+
+.imgcontainer a img:hover{
+  box-shadow: 0 0 20px 0 #003D30;
+  transition: all 0.3s ease;
+}
+
+.textHolder{
+  margin: 0;
+  padding: 30px 10%; 
+}
+
+.tabContainer{
+  display: block;
+  margin: 0;
+  padding: 30px 10%;
+}
+
+.tab {
+  display: inline-flex;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+  background-color: #003D30;
+}
+
+.tab button{
+  color: #ccc;
+  background-color: #003D30;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0 16px;
+  height: 55px;
+  width: 100%;
+  font-size: 17px;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+.tab button:hover {
+  color: #ffff;
+  font-weight: bold;
+  background-color: #008066;
+}
+
+.tab button.active {
+  color: #ffff;
+  background-color: #008066;
+}
+
+.tabContent {
+  display: none;
+  padding: 6px 12px;
+  border: 2px solid #ccc;
+  border-top: none;
+}
+
+.tabContent ol li{
+  margin: 10px 0;
+  padding: 0;
+}
+
+@media (max-width: 950px){
+
+  #splitContent{
+    flex-direction: column;
+    padding: 5% 5%;
+  }
+
+  .container{
+      width: 100%;
+      margin: 30px 0;
+  }
+
+  .textHolder{
+    padding: 30px 5%; 
+  }
+
+  .tabContainer{
+    padding: 30px 5%; 
+  }
+
+}
